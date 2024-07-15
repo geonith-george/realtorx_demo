@@ -1,0 +1,189 @@
+/* styles.css */
+* {
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    /* font-weight: <weight>; */
+    font-style: normal;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: black; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: black; 
+  }
+
+
+  body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+
+  }
+
+
+body {
+    /* font-family: Arial, sans-serif; */
+    background-color: white;
+}
+
+header {
+    background-color:white;
+    padding: 20px;
+    text-align: center;
+}
+
+.header-content .header-image {
+    background: #fff;
+    height: 100%; /* Adjust as needed */
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.landing{
+    background: black;
+    color: white;
+    height: 100%; /* Adjust as needed */
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.services-page{
+    height: 100%;
+}
+
+.what-we-do{
+    height: 100%;
+}
+
+.title{
+    font-size: 150px;
+}
+
+.moto{
+    font-size: 50px;
+}
+
+.heading2{
+    font-size: 100px;
+}
+
+.showreel {
+    background-color: black;
+    color: white;
+    /* padding: 50px 0; */
+    /* text-align: center; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+
+}
+
+.principles, .process, .services {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.principles-container, .process-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.principle, .step, .service-item {
+    flex: 1;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.service-item .service-image {
+    background: black;
+    color: white;
+    /* height: 200px; Adjust as needed */
+    /* width: 100%; */
+    /* margin: 0 auto; */
+}
+
+footer {
+    background-color: white;
+    color: black;
+    /* margin: 2px; */
+    padding: 10px;
+    text-align: center;
+    border: 1px solid white;
+}
+
+
+footer nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.whatsapp{
+    width: 50px;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+
+
+    .title {
+        font-size: 80px;
+    }
+
+    .moto {
+        font-size: 20px;
+    }
+
+    .heading2{
+        font-size: 50px;
+    }
+
+    .whatsapp{
+        width: 30px;
+    }
+
+    .principles-container, .process-container {
+        flex-direction: column;
+    }
+
+    .principle, .step, .service-item {
+        margin: 10px 0;
+    }
+}
