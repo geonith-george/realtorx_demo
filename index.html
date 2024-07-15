@@ -16,154 +16,98 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
 
-
     <!-- Include the Locomotive Scroll CSS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.3/dist/locomotive-scroll.css">
-
-<!-- Include the Locomotive Scroll JavaScript -->
-<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.3/dist/locomotive-scroll.min.js"></script>
-
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.3/dist/locomotive-scroll.css">
 </head>
 
 <body>
 
-<div id="js-scroll">
+    <div id="js-scroll">
 
+        <nav class="p-nav navbar navbar-expand-sm navbar-dark bg-black  " style="background: black;">
+            <div class="container-fluid">
+                <a class="navbar-brand" [routerLink]="['/home']" style="font-size: 20px;"> <img src="realtorX.jpeg" alt=""
+                        srcset="" height="50px"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-<nav class="p-nav navbar navbar-expand-sm navbar-dark bg-black  " style="background: black;">
-    <div class="container-fluid" >
-            <a class="navbar-brand" [routerLink]="['/home']" style="font-size: 20px;"> <img src="realtorX.jpeg
-                " alt="" srcset="" height="50px"></a>
-        <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation">        
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      
-        <!-- added class flex-grow-1 -->
-        <ul class="flex-grow-1 navbar-nav m-auto mb-0 mb-lg-0" style="display: flex; justify-content: right; align-items: center;">    
-          
-          <li class="oswald-text">
-            <a class="nav-link" [routerLink]="['/home']" >Home</a>
-          </li>
-          <li class="oswald-text">
-            <a class="nav-link" [routerLink]="['/about']" >About</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-</nav>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-<section class="landing" style="height: 100vh;">
-    <h1 class="title">RealtorsX</h1>
-    <h1 class="moto">Invest Today. Benefit Tomorrow</h1>
-</section>
-
-    <section style="display: flex;padding: 20px;height: 100vh;" class="what-we-do">
-        <div class="header-content">
-            <h1 style="display: flex; align-items: last baseline;" class="heading2">What We Do</h1>
-            <h1 style="position: relative;justify-content: center; align-items: center; text-align: left;" class="moto">We specialise in developing and offering properties that provide exceptional value today and promise
-                significant appreciation in the future. We are dedicated to building long-term relationships with our
-                customers. Our focus is on loyalty and trust, not just transactions.</h1>
-            <div class="header-image" style="height: 300px;"> images goes here</div>
-        </div>
-    </section>
-
-        <!-- <section class="showreel">
-            <p>SHOW REEL HERE</p>
-        </section> -->
-
-    <!-- <section class="principles">
-        <h2>OUR PRINCIPLES</h2>
-        <div class="principles-container">
-            <div class="principle">
-                <h3>LISTEN</h3>
-                <p>Gather insights</p>
+                    <!-- added class flex-grow-1 -->
+                    <ul class="flex-grow-1 navbar-nav m-auto mb-0 mb-lg-0" style="display: flex; justify-content: right; align-items: center;">
+                        <li class="oswald-text">
+                            <a class="nav-link" [routerLink]="['/home']">Home</a>
+                        </li>
+                        <li class="oswald-text">
+                            <a class="nav-link" [routerLink]="['/about']">About</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="principle">
-                <h3>THINK</h3>
-                <p>Strategize</p>
-            </div>
-            <div class="principle">
-                <h3>CREATE</h3>
-                <p>Innovative ideas</p>
-            </div>
-            <div class="principle">
-                <h3>PUBLISH</h3>
-                <p>Deliver to market</p>
-            </div>
-        </div>
-    </section>
- 
-    <section class="process">
-        <h2>OUR PROCESS</h2>
-        <div class="process-container">
-            <div class="step">
-                <h3>KICK-OFF</h3>
-                <p>Initial briefing</p>
-            </div>
-            <div class="step">
-                <h3>CONCEPTS</h3>
-                <p>Develop ideas</p>
-            </div>
-            <div class="step">
-                <h3>DELIVERY</h3>
-                <p>Final product</p>
-            </div>
-        </div>
-    </section> -->
+        </nav>
 
-    <section style="background-color: black;color: white; margin: 0 auto;padding: 20px;height: 100vh;" class="services-page">
-        <h1 class="heading2">Services</h1>
+        <section class="landing" style="height: 100vh;">
+            <h1 class="title" data-scroll data-scroll-speed="4">RealtorsX</h1>
+            <div>
+                <h1 class="moto" id="scrambleText" data-scroll data-scroll-speed="4">Invest Today. Benefit Tomorrow</h1>
+                <!-- <h1 class="moto" data-scroll data-scroll-speed="2"> ></h1>     -->
+            </div>
+            </section>
 
-        <div class="service-item">
-            <div class="service-image"> image goes here </div>
-            <h1>Demi Kaufman</h1>
-            <p>Enjoy the sun in style</p>
-        </div>
-        <div class="service-item">
-            <div class="service-image"> image goes here </div>
-            <h1>Janelle Weller</h1>
-            <p>Classic elegance</p>
-        </div>
+        <section style="display: flex;padding: 20px;height: 100vh;" class="what-we-do">
+            <div class="header-content" data-scroll data-scroll-speed="2">
+                <h1 style="display: flex; align-items: last baseline;" class="heading2" data-scroll
+                    data-scroll-speed="1">What We Do</h1>
+                <h1 style="position: relative;justify-content: center; align-items: center; text-align: left;"
+                    class="moto" data-scroll data-scroll-speed="0.5">We specialise in developing and offering properties
+                    that provide exceptional value today and promise significant appreciation in the future. We are
+                    dedicated to building long-term relationships with our customers. Our focus is on loyalty and trust,
+                    not just transactions.</h1>
+                <div class="header-image" style="height: 300px;"> images goes here</div>
+            </div>
+        </section>
 
-        <!-- <div style="display: flex; justify-content: center; align-items: center;"> 
-            <div>hi </div>
-            <div>hi </div>
-        </div> -->
-    
-    </section>
+        <section style="background-color: black;color: white; margin: 0 auto;padding: 20px;height: 100vh;"
+            class="services-page">
+            <h1 class="heading2" data-scroll data-scroll-speed="0.5">Services</h1>
 
+            <div class="service-item">
+                <div class="service-image"> image goes here </div>
+                <h1>Demi Kaufman</h1>
+                <p>Enjoy the sun in style</p>
+            </div>
+            <div class="service-item">
+                <div class="service-image"> image goes here </div>
+                <h1>Janelle Weller</h1>
+                <p>Classic elegance</p>
+            </div>
+        </section>
 
-
-    <footer>
+        <footer>
             <p>© 2024 : REALTORX </p>
+        </footer>
 
-    </footer>
-    <div style="position: fixed;bottom: 25px; right: 20px;">
-        <!-- <a href="whatsapp://send?abid=7373343254&text=Hello%2C%20World!"><img src="pngegg1.png" alt="" srcset="" class="whatsapp"></a> -->
-        <a aria-label="Chat on WhatsApp" href="https://wa.me/919677333730?text=I'm%20inquiring%20about%20the%20apartment%20listing"> <img src="pngegg1.png" alt="" srcset="" class="whatsapp"></a>
+
+
     </div>
-
-</div>
-
-
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        const scroll = new LocomotiveScroll({
-            el: document.querySelector('#js-scroll'),
-            smooth: true
+    <div style="position: fixed;bottom: 25px; right: 20px;">
+        <a aria-label="Chat on WhatsApp" href="https://wa.me/919677333730?text=I'm%20inquiring%20about%20the%20apartment%20listing">
+            <img src="pngegg1.png" alt="" srcset="" class="whatsapp">
+        </a>
+    </div>
+    <!-- Include the Locomotive Scroll JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.3/dist/locomotive-scroll.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const scroll = new LocomotiveScroll({
+                el: document.querySelector("#js-scroll"),
+                smooth: true
+            });
         });
-    });
-</script>
+    </script>
 </body>
 
 </html>
